@@ -29,11 +29,13 @@ export async function fetchNotes(
   return response.data;
 }
 
-export async function createNote(newNote: {
+export interface NewNoteData {
   title: Note['title'];
   content: Note['content'];
   tag: Note['tag'];
-}): Promise<Note> {
+}
+
+export async function createNote(newNote: NewNoteData): Promise<Note> {
   const { data } = await axios.post<Note>(API, newNote, {
     headers: {
       Authorization: `Bearer ${token}`,
