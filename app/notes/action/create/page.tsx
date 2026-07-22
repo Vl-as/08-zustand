@@ -10,12 +10,14 @@ export const metadata: Metadata = {
     description:
       'NoteHub is a simple and efficient application designed for managing personal notes. It helps keep your thoughts organized and accessible in one place, whether you are at home or on the go.',
     url: `https://notehub.com/`,
-    images: {
-      url: `https://ac.goit.global/fullstack/react/notehub-og-meta.jpg`,
-      alt: 'NoteHub',
-      width: 1200,
-      height: 630,
-    },
+    images: [
+      {
+        url: `https://ac.goit.global/fullstack/react/notehub-og-meta.jpg`,
+        alt: 'NoteHub',
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
 };
 

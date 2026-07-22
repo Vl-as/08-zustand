@@ -22,12 +22,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: `Note: ${note.title}`,
       description: note.content.slice(0, 30),
       url: `https://08-zustand-pi-ten.vercel.app/notes/${id}`,
-      images: {
-        url: `https://ac.goit.global/fullstack/react/notehub-og-meta.jpg`,
-        alt: 'NoteHub',
-        width: 1200,
-        height: 630,
-      },
+      images: [
+        {
+          url: `https://ac.goit.global/fullstack/react/notehub-og-meta.jpg`,
+          alt: 'NoteHub',
+          width: 1200,
+          height: 630,
+        },
+      ],
     },
   };
 }
